@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="college.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <h1>College Event Registration</h1>
+                <p>Join us for exciting campus events!</p>
+            </div>
+            
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event" class="form-label">Select Event</label>
+                    <select id="event" name="event" class="form-select">
+                        <option value="">Choose an event...</option>
+                        <option value="tech-fest">Tech Fest 2025</option>
+                        <option value="cultural-night">Cultural Night</option>
+                        <option value="sports-meet">Annual Sports Meet</option>
+                        <option value="hackathon">48-Hour Hackathon</option>
+                        <option value="career-fair">Career Fair</option>
+                        <option value="music-concert">Music Concert</option>
+                    </select>
+                    <span class="error-message" id="eventError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Register Now</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Registration Successful!</h3>
+                <p>Thank you for registering. You'll receive a confirmation email shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
